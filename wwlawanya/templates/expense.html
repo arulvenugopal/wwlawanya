@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Expenses
+{% endblock %}
+
+{% block body %}
+<div>
+  <h1> Expense for West Wood Lawanya </h1>
+  <form action = "{{url_for('register')}}" method ="post">
+    Name    : <name="flatowner" type="text"/>
+    <select name="flatowner">
+      <option value=""></option>
+      <option value ="G1_Amirtharaj"> G1_Amirtharaj</option>
+      <option value ="G2_Arul"> G2_Arul</option>
+      <option value ="F1_Mylapore"> F1_Mylapore</option>
+      <option value ="F2_Vignesh"> F2_Vignesh</option>
+    </select>
+    </br>
+    Expense : <name="expense" type="text"/>
+    <select name="expense">
+      <option value=""></option>
+      <option value ="Hs_Cleaning_Fee"> Hs_Cleaning_Fee</option>
+      <option value ="Hs_Cleaning_Material"> Hs_Cleaning_Mat</option>
+      <option value ="Tk_Cleaning_Fee"> Tk_Cleaning_Fee</option>
+      <option value ="Tk_Cleaning_Material"> Hs_Cleaning_Mat</option>
+    </select>
+    </br>
+    <input name="bill" type="radio" value="BIll"/> BILL
+    </br>
+    <input type="submit" value="Submit"/>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+body {
+    background-image: url("house.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: content-box;
+    /*border-style: dashed;
+    border-color: red;*/
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    /*background: #3B5998;*/
+    background-image: url("horizon.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    font-family: verdana;
+    font-size: 30px;
+}
+
+form{
+  /*display: inline-block;
+  width: auto;
+  text-align: right;*/
+  display:flex;
+  justify-content: flex-start;
+  text-align: right;
+  background-image: url("team.jpg");
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+  /*border-color: black;
+  border-style: double;*/
+}
+
+/*div
+{
+  background-image: url("team.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
